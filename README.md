@@ -1,5 +1,5 @@
 # 💫 About Me
-Studying Computer Science with AI at the University of Bristol, focusing on C, Haskell, and upcoming work in Java.<br>I also explore Python and JavaScript through smaller side projects.<br>Most of my work here reflects ongoing research, experimentation, and the development of a broader technical toolkit.
+Studying Computer Science with AI at the University of Bristol (2025-2028).<br>Learning C, Haskell, Java in Year 1.<br>Also focusing on building personal projects and developing my skills in Python, Javascript, C#, and other tools.
 
 
 ## 🌐 Socials
