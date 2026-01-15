@@ -7,5 +7,5 @@ Studying Computer Science with AI at the University of Bristol (2025-2028).<br>L
 
 ## 💻 Current Languages
 ![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white)
+![Java](https://img.shields.io/badge/java-007396?style=flat&logo=java&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330?style=flat&logo=javascript&logoColor=%23F7DF1E)
