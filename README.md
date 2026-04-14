@@ -1,12 +1,12 @@
 <div align="center">
 
-# `ofrost`
+# `olliefrost`
 
 **BSc Computer Science with Artificial Intelligence** &nbsp;·&nbsp; University of Bristol &nbsp;·&nbsp; 2025–28
 
 Year 1: C &nbsp;·&nbsp; Haskell &nbsp;·&nbsp; Java
 
-Building with: Python &nbsp;·&nbsp; JavaScript &nbsp;·&nbsp; C#
+Building with: Python &nbsp;·&nbsp; TypeScript &nbsp;·&nbsp; Java
 
 <br>
 
@@ -21,7 +21,6 @@ Building with: Python &nbsp;·&nbsp; JavaScript &nbsp;·&nbsp; C#
 ![Haskell](https://img.shields.io/badge/Haskell-5D4F85?style=flat-square&logo=haskell&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=ffdd54)
-![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E)
-![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 
 </div>
