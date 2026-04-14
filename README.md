@@ -1,11 +1,27 @@
-# 💫 About Me
-Studying Computer Science with AI at the University of Bristol (2025-2028).<br>Learning C, Haskell, Java in Year 1.<br>Also focusing on building personal projects and developing my skills in Python, Javascript, C#, and other tools.
+<div align="center">
 
+# `ofrost`
 
-## 🌐 Socials
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/olliefrost21) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/ukfrost) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:ollie@ofrost.dev) [![Website](https://img.shields.io/badge/🌐%20Website-4A4A4A?style=flat&logoColor=white)](https://ofrost.dev)
+**BSc Computer Science with Artificial Intelligence** &nbsp;·&nbsp; University of Bristol &nbsp;·&nbsp; 2025–28
 
-## 💻 Current Languages
-![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54)
-![Java](https://img.shields.io/badge/java-ED8B00?style=flat&logo=openjdk&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330?style=flat&logo=javascript&logoColor=%23F7DF1E)
+Year 1: C &nbsp;·&nbsp; Haskell &nbsp;·&nbsp; Java
+
+Building with: Python &nbsp;·&nbsp; JavaScript &nbsp;·&nbsp; C#
+
+<br>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/olliefrost21)
+[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/ukfrost)
+[![Email](https://img.shields.io/badge/ollie@ofrost.dev-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ollie@ofrost.dev)
+[![Website](https://img.shields.io/badge/ofrost.dev-111111?style=for-the-badge&logo=firefoxbrowser&logoColor=white)](https://ofrost.dev)
+
+<br>
+
+![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
+![Haskell](https://img.shields.io/badge/Haskell-5D4F85?style=flat-square&logo=haskell&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=ffdd54)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E)
+![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+
+</div>
