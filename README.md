@@ -4,8 +4,7 @@
 
 **BSc Computer Science with Artificial Intelligence** &nbsp;·&nbsp; University of Bristol &nbsp;·&nbsp; 2025–28
 
-Year 1: C &nbsp;·&nbsp; Haskell &nbsp;·&nbsp; Java
-
+Year 1: C &nbsp;·&nbsp; Haskell &nbsp;·&nbsp; Java  
 Building with: Python &nbsp;·&nbsp; TypeScript &nbsp;·&nbsp; Java
 
 <br>
@@ -22,5 +21,9 @@ Building with: Python &nbsp;·&nbsp; TypeScript &nbsp;·&nbsp; Java
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=ffdd54)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+
+<br>
+
+<img src="assets/git.gif" width="80"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/vscode.gif" width="80"/>
 
 </div>
