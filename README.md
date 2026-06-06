@@ -10,7 +10,7 @@ Building with: Python &nbsp;·&nbsp; TypeScript &nbsp;·&nbsp; Java
 <br>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/olliefrost21)
-[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/ukfrost)
+[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/ofrostdev)
 [![Email](https://img.shields.io/badge/ollie@ofrost.dev-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ollie@ofrost.dev)
 [![Website](https://img.shields.io/badge/ofrost.dev-111111?style=for-the-badge&logo=firefoxbrowser&logoColor=white)](https://ofrost.dev)
 
