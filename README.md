@@ -3,8 +3,8 @@
 # `olliefrost`
 
 **BSc Computer Science with Artificial Intelligence** &nbsp;·&nbsp; University of Bristol &nbsp;·&nbsp; 2025–28
+Entering Second (penultimate) year.
 
-Year 1: C &nbsp;·&nbsp; Haskell &nbsp;·&nbsp; Java  
 Building with: Python &nbsp;·&nbsp; TypeScript &nbsp;·&nbsp; Java
 
 <br>
