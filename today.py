@@ -12,6 +12,10 @@ import hashlib
 # Issues and pull requests permissions not needed at the moment, but may be used in the future
 HEADERS = {'authorization': 'token '+ os.environ['ACCESS_TOKEN']}
 USER_NAME = os.environ['USER_NAME'] # 'olliefrost'
+# Comma-separated 'owner/repo' names to skip when counting lines of code,
+# e.g. repos with a vendored/generated file that was later removed and
+# would otherwise massively inflate the additions/deletions churn.
+EXCLUDED_REPOS = {r.strip() for r in os.environ.get('EXCLUDED_REPOS', '').split(',') if r.strip()}
 QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'graph_repos_stars': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
 
 
@@ -220,7 +224,9 @@ def loc_query(owner_affiliation, comment_size=0, force_cache=False, cursor=None,
         edges += request.json()['data']['user']['repositories']['edges']            # Add on to the LoC count
         return loc_query(owner_affiliation, comment_size, force_cache, request.json()['data']['user']['repositories']['pageInfo']['endCursor'], edges)
     else:
-        return cache_builder(edges + request.json()['data']['user']['repositories']['edges'], comment_size, force_cache)
+        all_edges = edges + request.json()['data']['user']['repositories']['edges']
+        all_edges = [e for e in all_edges if e['node']['nameWithOwner'] not in EXCLUDED_REPOS]
+        return cache_builder(all_edges, comment_size, force_cache)
 
 
 def cache_builder(edges, comment_size, force_cache, loc_add=0, loc_del=0):
