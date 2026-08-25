@@ -269,12 +269,37 @@ def svg_overwrite(filename, age_data, commit_data, loc_data):
     """
     tree = etree.parse(filename)
     root = tree.getroot()
-    justify_format(root, 'age_data', age_data, 76)
-    justify_format(root, 'commit_data', commit_data, 71)
-    justify_format(root, 'loc_data', loc_data[2], 13)
-    justify_format(root, 'loc_add', loc_data[0])
-    justify_format(root, 'loc_del', loc_data[1], 10)
+    justify_format(root, 'age_data', age_data, 75)
+    justify_format(root, 'commit_data', commit_data, 73)
+    # loc_add and loc_del sit after the loc_data leader on the same line, so their digit
+    # counts eat into how much padding loc_data needs to still land the line on column 86.
+    loc_add, loc_del, loc_total = loc_data
+    loc_del_length = 10
+    fixed_suffix = 3 + len(loc_add) + 2 + 2 + dot_string_length(loc_del_length, len(loc_del)) + len(loc_del) + 2 + 2
+    loc_data_length = 86 - len('. Lines of Code on GitHub:') - fixed_suffix - 2
+    justify_format(root, 'loc_data', loc_total, loc_data_length)
+    justify_format(root, 'loc_add', loc_add)
+    justify_format(root, 'loc_del', loc_del, loc_del_length)
     tree.write(filename, encoding='utf-8', xml_declaration=True)
+
+
+def dot_string_for(length, value_len):
+    """
+    Builds the dot leader string justify_format would emit for a value of value_len
+    against the given target length.
+    """
+    just_len = max(0, length - value_len)
+    if just_len <= 2:
+        dot_map = {0: '', 1: ' ', 2: '. '}
+        return dot_map[just_len]
+    return ' ' + ('.' * just_len) + ' '
+
+
+def dot_string_length(length, value_len):
+    """
+    Length of the dot leader dot_string_for would emit, without building the string.
+    """
+    return len(dot_string_for(length, value_len))
 
 
 def justify_format(root, element_id, new_text, length=0):
@@ -285,12 +310,7 @@ def justify_format(root, element_id, new_text, length=0):
         new_text = f"{'{:,}'.format(new_text)}"
     new_text = str(new_text)
     find_and_replace(root, element_id, new_text)
-    just_len = max(0, length - len(new_text))
-    if just_len <= 2:
-        dot_map = {0: '', 1: ' ', 2: '. '}
-        dot_string = dot_map[just_len]
-    else:
-        dot_string = ' ' + ('.' * just_len) + ' '
+    dot_string = dot_string_for(length, len(new_text))
     find_and_replace(root, f"{element_id}_dots", dot_string)
 
 
