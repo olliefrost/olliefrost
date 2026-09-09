@@ -38,7 +38,10 @@ jobs:
         run: |-
           git add .
           git diff
-          git config --global user.email "ollie@ofrost.dev"
-          git config --global user.name "olliefrost/GitHub-Actions-Bot"
+          # Commit as the Actions bot so the daily auto-update does NOT count
+          # as a contribution on the profile owner's graph (this email is not
+          # linked to a GitHub account).
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
           git commit -m "Updated README" -a || echo "No changes to commit"
           git push
