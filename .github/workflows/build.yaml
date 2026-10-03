@@ -31,8 +31,9 @@ jobs:
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           USER_NAME: ${{ secrets.USER_NAME }}
-          # Comma-separated 'owner/repo' entries to exclude from the LOC count
-          EXCLUDED_REPOS: "olliefrost/work"
+          # Comma-separated 'owner/repo' entries to exclude from the LOC count;
+          # a bare 'owner' excludes every repo under that user/org
+          EXCLUDED_REPOS: "olliefrost/work,spe-uob"
         run: python today.py
       - name: Commit
         run: |-

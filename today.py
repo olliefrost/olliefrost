@@ -15,6 +15,7 @@ USER_NAME = os.environ['USER_NAME'] # 'olliefrost'
 # Comma-separated 'owner/repo' names to skip when counting lines of code,
 # e.g. repos with a vendored/generated file that was later removed and
 # would otherwise massively inflate the additions/deletions churn.
+# A bare 'owner' entry (no slash) skips every repo under that user/org.
 EXCLUDED_REPOS = {r.strip() for r in os.environ.get('EXCLUDED_REPOS', '').split(',') if r.strip()}
 QUERY_COUNT = {'user_getter': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
 
@@ -186,8 +187,15 @@ def loc_query(owner_affiliation, comment_size=0, force_cache=False, cursor=None,
         return loc_query(owner_affiliation, comment_size, force_cache, request.json()['data']['user']['repositories']['pageInfo']['endCursor'], edges)
     else:
         all_edges = edges + request.json()['data']['user']['repositories']['edges']
-        all_edges = [e for e in all_edges if e['node']['nameWithOwner'] not in EXCLUDED_REPOS]
+        all_edges = [e for e in all_edges if not is_excluded(e['node']['nameWithOwner'])]
         return cache_builder(all_edges, comment_size, force_cache)
+
+
+def is_excluded(name_with_owner):
+    """
+    True if the repo, or its whole owner, is listed in EXCLUDED_REPOS
+    """
+    return name_with_owner in EXCLUDED_REPOS or name_with_owner.split('/')[0] in EXCLUDED_REPOS
 
 
 def cache_builder(edges, comment_size, force_cache, loc_add=0, loc_del=0):
